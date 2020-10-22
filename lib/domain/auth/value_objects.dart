@@ -16,7 +16,7 @@ class EmailAddress extends ValueObject<String> {
     assert(input != null);
 
     return EmailAddress._(
-      validateEmailAddress(input)
+      validateEmailAddress(input.trim())
     );
   }
 }
