@@ -5,7 +5,6 @@ import 'package:note_taking_app/domain/core/value.objects.dart';
 import 'package:note_taking_app/domain/core/value_validators.dart';
 
 
-
 class EmailAddress extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
