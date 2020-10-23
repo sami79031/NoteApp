@@ -11,7 +11,7 @@ class SplashPage extends StatelessWidget {
       listener: (context, state) {
         state.map(
             initial: (_) {},
-            authenticated: (_) { print('AUTHENTICATE USER'); },//=> ExtendedNavigator.of(context).replace(routeName),
+            authenticated: (_) { },
             unAuthenticated: (_) => ExtendedNavigator.of(context).replace(Routes.signInPage));
       },
       child: const Scaffold(
